@@ -1,12 +1,22 @@
 <Solution>
   <Folder Name="/MainApi/">
-    <Project Path="MainApi.BusinessLogic/MainApi.BusinessLogic.csproj" />
+    <Project Path="MainApi.BusinessLogic/MainApi.BusinessLogic.csproj">
+      <BuildDependency Project="MainApi.DataAccess/MainApi.DataAccess.csproj" />
+    </Project>
     <Project Path="MainApi.DataAccess/MainApi.DataAccess.csproj" />
-    <Project Path="MainApi/MainApi.API.csproj" />
+    <Project Path="MainApi/MainApi.API.csproj">
+      <BuildDependency Project="MainApi.BusinessLogic/MainApi.BusinessLogic.csproj" />
+      <BuildDependency Project="MainApi.DataAccess/MainApi.DataAccess.csproj" />
+    </Project>
   </Folder>
   <Folder Name="/TelegramService/">
-    <Project Path="TelegramService.API/TelegramService.API.csproj" />
-    <Project Path="TelegramService.BusinessLogic/TelegramService.BusinessLogic.csproj" />
+    <Project Path="TelegramService.API/TelegramService.API.csproj">
+      <BuildDependency Project="TelegramService.BusinessLogic/TelegramService.BusinessLogic.csproj" />
+      <BuildDependency Project="TelegramService.DataAccess/TelegramService.DataAccess.csproj" />
+    </Project>
+    <Project Path="TelegramService.BusinessLogic/TelegramService.BusinessLogic.csproj">
+      <BuildDependency Project="TelegramService.DataAccess/TelegramService.DataAccess.csproj" />
+    </Project>
     <Project Path="TelegramService.DataAccess/TelegramService.DataAccess.csproj" />
   </Folder>
 </Solution>
