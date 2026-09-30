@@ -1,0 +1,12 @@
+<Solution>
+  <Folder Name="/MainApi/">
+    <Project Path="MainApi.BusinessLogic/MainApi.BusinessLogic.csproj" />
+    <Project Path="MainApi.DataAccess/MainApi.DataAccess.csproj" />
+    <Project Path="MainApi/MainApi.API.csproj" />
+  </Folder>
+  <Folder Name="/TelegramService/">
+    <Project Path="TelegramService.API/TelegramService.API.csproj" />
+    <Project Path="TelegramService.BusinessLogic/TelegramService.BusinessLogic.csproj" />
+    <Project Path="TelegramService.DataAccess/TelegramService.DataAccess.csproj" />
+  </Folder>
+</Solution>
